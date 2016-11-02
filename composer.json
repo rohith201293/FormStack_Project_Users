@@ -1,0 +1,10 @@
+{
+    "name": "formstack/user",
+    "authors": [
+        {
+            "name": "rohith",
+            "email": "rohith201293@gmail.com"
+        }
+    ],
+    "require": {}
+}
