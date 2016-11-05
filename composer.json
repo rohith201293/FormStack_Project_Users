@@ -6,5 +6,7 @@
             "email": "rohith201293@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "robmorgan/phinx": "0.4.4"
+    }
 }
