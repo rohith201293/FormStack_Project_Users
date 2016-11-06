@@ -1,6 +1,10 @@
 <?php
 
 use Phinx\Migration\AbstractMigration;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
 
 class CreateUsersTable extends AbstractMigration
 {
@@ -15,15 +19,11 @@ class CreateUsersTable extends AbstractMigration
      public function up()
      {
 
-       $users = $this->table('users');
-       $users->addColumn('First_name','String')
-              ->addColumn('Last_name','String')
-              ->addColumn('Email','String')
-              ->addColumn('password','String')
-              ->addColumn('created_at','datetime',['null'=>  true])
-              ->addColumn('updated_at','datetime',['null'=>  true])
-
-              ->save();
+       $table = $this->table('user_logins');
+         $table->addColumn('user_id', 'integer')
+               ->addColumn('created', 'datetime')
+               ->create()
+               -> save();
      }
 
      /**
@@ -33,6 +33,6 @@ class CreateUsersTable extends AbstractMigration
       */
      public function down()
      {
-         $this->dropTable('users');
+         Schema::dropTable('user');
      }
    }
