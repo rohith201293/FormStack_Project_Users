@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Database\Eloquent\Model  as Eloquent;
-
-class users  extends  Eloquent{
-  public  $timestamps =false;
+/**
+ * This is a model whcih  we  define using Eloquent.
+ */
+class users extends Eloquent
+{
+    public $timestamps =false;
 }

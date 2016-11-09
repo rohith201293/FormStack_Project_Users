@@ -1,4 +1,7 @@
-paths:
+/**
+ * [migrations //create  migrations  using  phinx to mysql ]
+ * Retains  data base information.
+ */
     migrations: %%PHINX_CONFIG_DIR%%/migrations
 
 environments:

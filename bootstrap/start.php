@@ -1,4 +1,7 @@
 <?php
+/**
+ * This files loads through  index.php and provides   filp/Whoops  for error reporting.
+ */
 session_start();
 
 require(__DIR__ .  "/../vendor/autoload.php");

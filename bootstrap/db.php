@@ -1,17 +1,8 @@
 <?php
-
-
-/*$con = mysql_connect('localhost','root','secret');
-$db=mysql_select_db('my_app');
-
-if($con)
-{
-  echo "connected";
-}
-
-else{
-  echo "some  problem";
-}*/
+/**
+ * This dp  file is a database connection file  whcih  connects to database using Illuminate.
+ * This file fetch data from .env and establishes  connections.
+ */
 use Illuminate\Database\Capsule\Manager  as Capsule;
 
 $capsule =  new  Capsule;

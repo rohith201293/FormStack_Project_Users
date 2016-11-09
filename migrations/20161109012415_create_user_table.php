@@ -1,7 +1,9 @@
 <?php
 
 use Phinx\Migration\AbstractMigration;
-
+/**
+ * This migrations  are  done  to retrive  database. This specific file is  used  to create a table in the database
+ */
 class CreateUserTable extends AbstractMigration
 {
     /**
@@ -19,17 +21,16 @@ class CreateUserTable extends AbstractMigration
 
     public function up()
     {
-      $users  = $this->table('users');
-    $users->addColumn('first_name', 'string')
+        $users  = $this->table('users');
+        $users->addColumn('first_name', 'string')
         ->addColumn('last_name', 'string')
         ->addColumn('Email', 'string')
-        ->addColumn('created_at', 'datetime',['null'=>true])
-        ->addColumn('created_at', 'datetime',['null'=>true])
+        ->addColumn('created_at', 'datetime', ['null'=>true])
+        ->addColumn('created_at', 'datetime', ['null'=>true])
         ->save();
-
     }
-    public function down(){
-
-$this->dropTable('users');
+    public function down()
+    {
+        $this->dropTable('users');
     }
 }
