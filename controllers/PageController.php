@@ -3,7 +3,7 @@
 class PageController{
 
   public   function getShowHomePage(){
-    include(__DIR__  .  "/../views/home.php");
+    include(__DIR__  .  "/../views/register.php");
 
    }
   public   function getShowRegisterPage(){

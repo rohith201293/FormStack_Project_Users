@@ -1,22 +1,21 @@
 {
-    "name": "formstack/user",
+    "name": "formstack/users",
     "authors": [
         {
-            "name": "rohith",
+            "name": "Rohith",
             "email": "rohith201293@gmail.com"
         }
     ],
     "require": {
-     "filp/whoops":"^1.1",
-     "altorouter/altorouter": "1.1.0",
+      "filp/whoops":"^2.1",
+      "altorouter/altorouter": "1.1.0",
       "vlucas/phpdotenv":"~1.1",
+      "illuminate/contracts":"5.1.*",
       "illuminate/database":"5.1.*",
-        "robmorgan/phinx": "0.4.4"
+      "robmorgan/phinx": "0.4.4"
     },
 
-    "autoload":{
-      "classmap":["controllers/"]
-    }
-
-
+    "autoload": {
+         "classmap":["controllers/"]
+       }
 }

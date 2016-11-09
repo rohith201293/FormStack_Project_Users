@@ -1,5 +1,11 @@
+
+<?php
+
+echo "please Fill  the details";
+?>
 <html>
-<form id=  "registerationform"  name="registrationform"  action="/doRegister.php" method='post'>
+<form id=  "registerationform"  name="registrationform"  action="/register" method='post'
+accept-charset='UTF-8'>
   <label> Fisrt_Name</label>
   <input  type="text" id="first_name" name="first_name"></br>
   <label> Last_Name</label>
@@ -11,6 +17,6 @@
   <input  type="password" id="password" name="password"></br>
     <label> Verify passWord</label>
   <input  type="password" id="verify_password" name="verify_password"></br>
-  <input type ="submit" onclick="/doRegister.php" value ="submit">
+  <input type ="submit"  value ="submit">
 
 </html>

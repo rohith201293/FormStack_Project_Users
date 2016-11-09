@@ -6,7 +6,7 @@ environments:
     default_database: development
     production:
         adapter: mysql
-        host: localhost
+        host: 127.0.0.1
         name: my_app
         user: root
         pass:  secret
@@ -15,17 +15,17 @@ environments:
 
     development:
           adapter: mysql
-          host: localhost
+          host: 127.0.0.1
           name: my_app
           user: root
-          pass:  secret
+          pass: secret
           port: 3306
           charset: utf8
     testing:
         adapter: mysql
-        host: localhost
+        host: 127.0.0.1
         name: my_app
         user: root
-        pass:  secret
+        pass: secret
         port: 3306
         charset: utf8
