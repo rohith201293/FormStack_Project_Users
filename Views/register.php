@@ -15,8 +15,7 @@ accept-charset='UTF-8'>
   <label> password</label>
 
   <input  type="password" id="password" name="password"></br>
-    <label> Verify passWord</label>
-  <input  type="password" id="verify_password" name="verify_password"></br>
+
   <input type ="submit"  value ="submit">
 
 </html>
